@@ -9,7 +9,7 @@ for (int i = 0; i < array.Length; i++)
     array[i] = new Random().Next(1, 100);
 }
 
-for (int i = 0; i < array.Length; i = i + 2)
+for (int i = 1; i < array.Length; i = i + 2)
     count = count + array[i];
 
 Console.WriteLine($"Наш массив: [{string.Join(", ", array)}]");
